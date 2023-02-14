@@ -1,0 +1,16 @@
+img.img-fluid{
+    max-width: 251px;
+    max-height: 251px;
+}
+
+
+.form-layout{
+
+    border-radius: 20px;
+    width: 500px;
+
+}
+
+ion-icon {
+    font-size: 164px;
+  }

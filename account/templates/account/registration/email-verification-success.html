@@ -1,0 +1,32 @@
+{% include 'store/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<style>
+    body{
+        background-color: grey;
+    }
+    ion-icon {
+        font-size: 75px;
+        color: green;
+      }
+</style>
+
+<body>
+
+    <br />
+    <div class="container bg-white shadow-md p-5 form-layout">
+        <div class="text-center">
+        <ion-icon name="checkmark-sharp"></ion-icon>
+        </div>
+<h3><strong>Thank you for registering with us. Your account is now active. </strong></h3>
+<br />
+<p>You can now login to your account by clicking the button below.</p>
+
+<div>
+
+</body>
+<br><br>
+
+{% endblock content %}

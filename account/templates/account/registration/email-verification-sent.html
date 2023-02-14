@@ -1,0 +1,35 @@
+{% include 'store/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<style>
+    body{
+        background-color: grey;
+    }
+    ion-icon {
+        font-size: 65px;
+        color: grey;
+      }
+</style>
+
+<body>
+
+    <br />
+    <div class="container bg-white shadow-md p-5 form-layout">
+        <div class="text-center">
+        <ion-icon name="mail-sharp"></ion-icon>
+        </div>
+<h3><strong>A verification email has been sent to your email.</strong></h3>
+<hr>
+<br>
+<p>Thank you for registering with us. We have sent you an email with a link to verify your email address.
+<p>Please click on the link to verify your email address.</p>
+<p>If you do not receive the email within a few minutes, please check your spam folder.</p>
+
+<div>
+
+</body>
+<br><br>
+
+{% endblock content %}

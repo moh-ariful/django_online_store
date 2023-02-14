@@ -1,0 +1,34 @@
+{% include 'store/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<style>
+    body{
+        background-color: grey;
+    }
+    ion-icon {
+        font-size: 85px;
+        color: red;
+      }
+</style>
+
+<body>
+
+    <br />
+    <div class="container bg-white shadow-md p-5 form-layout">
+        <div class="text-center">
+            <ion-icon name="close-sharp"></ion-icon>
+        </div>
+<h3><strong>Email verification failed.</strong></h3>
+<hr>
+<br>
+<p>Please try again, or contact us if the problem persists.</p>
+
+
+<div>
+
+</body>
+<br><br>
+
+{% endblock content %}

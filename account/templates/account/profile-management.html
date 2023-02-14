@@ -1,0 +1,56 @@
+{% include 'store/base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br><br>
+
+<style>
+    body{
+        background-color: grey;
+    }
+    ion-icon {
+        color: blue;
+      }
+</style>
+
+<body>
+
+<br />
+<div class="container bg-white shadow-md p-5 form-layout">
+
+    <ion-icon name="person-circle-sharp" size="large"></ion-icon><h3>Profile Management</h3>
+    <br />
+    <form method="post" autocomplete="off">
+
+        {% csrf_token %}
+
+        {{ user_form.username|as_crispy_field }}
+        <br />
+
+        {{ user_form.email|as_crispy_field }}
+        <br />
+        <br />
+        <button type="submit" class="btn btn-primary btn-lg w-100 btn-block p-2">&nbsp; Update your account</button>
+
+    </form>
+
+</div>
+        <br />
+
+        <div class="container bg-white shadow-md p-5 form-layout">
+
+            <h3>Delete your account</h3>
+            <hr>
+            <br />
+            <p>Proceed with caution. This action is irreversible.</p>
+            <br />
+            <a class="btn btn-danger btn-lg w-100 btn-block p-2" type="button"  href="{% url 'delete-account' %}"> Delete your account </a>
+        </div>
+
+</body>
+<br><br>
+
+{% endblock content %}

@@ -1,0 +1,49 @@
+{% include 'store/base.html' %}
+
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br><br>
+
+<style>
+    body{
+        background-color: grey;
+    }
+</style>
+
+<body>
+
+<br />
+<div class="container bg-white shadow-md p-5 form-layout">
+
+    <h3>Login to your account</h3>
+    <hr>
+    <br />
+    <form method="post" autocomplete="off">
+
+        {% csrf_token %}
+
+        {{ form.username|as_crispy_field }}
+        <br />
+
+        {{ form.password|as_crispy_field }}
+        <br />
+        <br />
+        <button type="submit" class="btn btn-primary btn-lg w-100 btn-block p-2"><ion-icon name="log-in-outline"></ion-icon>&nbsp; Login</button>
+        <br><br>
+        <div class="text-center">
+            <a href="{% url 'register' %}">Don't have an account? Register here</a>
+            <br><br>
+            <a href="{% url 'reset_password' %}">Forgot your password?</a>
+        </div>
+
+    </form>
+
+    <div>
+
+</body>
+<br><br>
+
+{% endblock content %}
