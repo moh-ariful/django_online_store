@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-SECRET_KEY = 'django-insecure-zvw9cozk3038x$)z#79ky00y3@pk5s3lj0e5lu=(&mm=3hn=e5'
+SECRET_KEY = 'rahasia'
 ALLOWED_HOSTS = []
 
 
@@ -75,8 +75,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ecommerce',
-        'USER': 'postgres',
-        'PASSWORD': '123',
+        'USER': 'rahasia',
+        'PASSWORD': 'rahasia',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -133,6 +133,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAILPORT = '587'
-EMAIL_HOST_USER = 'nextkoding@gmail.com'   # Your email in Gmail
-EMAIL_HOST_PASSWORD = 'xqyobpnsnwtxuoki'    # Your app password in Gmail
+EMAIL_HOST_USER = 'email@gmail.com'   # Your email in Gmail
+EMAIL_HOST_PASSWORD = 'rahasia'    # Your app password in Gmail
 EMAIL_USE_TLS = True
